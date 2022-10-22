@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(230, 230, 4);
+    padding : 20px; 
+}
+.wrapper{
+    max-width: 1090px;
+    width: 100%;
+    /* background: #fff; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+
+}
+.wrapper .table{
+    background: #fff;
+    width: calc(33% - 120px);
+    padding: 30px;
+    position: relative;
+
+}
+.table .price_section{
+display: flex;
+justify-content: center;
+}
+
+.price_section .price_area{
+    height: 120px;
+    width: 120px;
+    background: grey;
+    text-align: center;
+    position:relative;
+
+}
+.price_area .inner_area{
+height: 100%;;
+width: 100%;
+background: rgb(221, 212, 212);
+
+}
+.price_area .inner_area .text{
+    font-size: 30px;
+    font-weight: 400;
+    top: -10px;
+    left:17px;
+}
+.price_area .inner_area .price{
+    font-size: 50px;
+    font-weight: 400px;
+margin-left: 16px;
+align-items: center;
+}
+
+.table .package::before{
+    position: absolute;
+    content: "Basic";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.table .btn{
+    display: flex;
+    justify-self: center;
+    margin-top: 21%;
+}
+.table .btn button{
+    width: 80%;
+    height: 50px;
+    color: blue;
+    outline: none;
+    background: rgb(217, 217, 226);
+    font-size: 20px;cursor: pointer;
+}
+
+.table .new{
+    height: 150px;
+    width: 130px;
+    /* background: yellow; */
+    position:absolute;
+    top:  -10px;
+    left:-10px;
+    overflow: hidden;
+    text-align: center;
+}
+.table .new span{
+    position: absolute;
+    background: yellow;
+    width: 200px;
+    padding: 10px 0;
+    color: black;
+    text-align: center;
+    top:30px;
+    right: 0px;
+    transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1020px) {
+    .wrapper .table{
+        width: calc(30% - 20px);
+        margin-bottom: 40px;
+    }
+    
+@media (max-width: 687px) {
+    .wrapper .table{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+}}
